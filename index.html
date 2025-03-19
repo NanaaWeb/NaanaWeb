@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>NanaaWeb</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <p class="logo">
+                    NanaaWeb
+                </p>
+                <nav>
+                    <a href="#Somos-NanaaWeb">Sobre Nosotros</a>
+                    <a href="#Ayuda-Tecnologica">Ayuda Tecnologica</a>
+                    <a href="#Necesito-ayuda">Contactanos</a>
+                </nav>
+            </div>
+        </header>
+        <section id="hero">
+            <h1> <br> ¿Necesitás ayuda? <br> Nosotros te ayudamos</h1>
+        </section>
+        <section id="Somos-NanaaWeb">
+            <div class="container">
+                <div class="img-container"></div>
+                <div class="texto">
+                <h2>Somos <span class="color-acento">NanaaWeb</span></h2> <!--Span color-acento para poder modificar el color de NanaaWeb -->
+                <p>NanaaWeb, es una idea creada por estudiantes de un colegio, con la idea de brindar ayuda a las personas que aun no se adaptan a las tecnologías de nuestra 
+                    actualidad, esto debido a qué, a pesar de que la tecnología actual nos hace más faciles las cosas, hay personas qué no conocen cómo manejar dispositivos
+                    inteligentes.<br>Para eso está NanaaWeb, en la que brindamos ayuda para qué las personas puedan realizar de manera más fácil todo tipo de comunicación con
+                    cualquier dispositivo inteligente. </p>
+            </div>
+        </div>
+        </section>
+        <section id="Ayuda-Tecnologica">
+            <div class="container">
+
+            <h2>Nuestras Guías</h2>
+            <div class="ayudas">
+            <div class="carta">
+                <h3>Inteligencia Artificial</h3>
+                <p>En esta sección te explicamos como te puedes ayudar con cualquier tipo de Inteligencia artificial.</p>
+                <button onclick="mostrarInfo('infoIA')"></buttononclick>+ Info</button>
+            </div>
+            <div class="carta">
+                <h3>YouTube</h3>
+                <p>En esta sección te explicamos a detalle y paso a paso el como te puedes ayudar con YouTube y sus tutoriales.</p>
+                <a href="https://youtu.be/h2sl_06RpQo?si=m4A4c01_FJBMvt9B">
+                    <button>+ Info</button>
+                </a>
+            </div>
+            <div class="carta">
+                <h3>TalkBack</h3>
+                <p>Esta es una sección dedicada a la inclusión, para poder asistir a personas con algún tipo de discapacidad y para qué sus familiares o personas
+                    que estén a cargo, sepan como ayudarles de una manera fácil.
+                </p>
+                <button onclick="mostrarInfo('infoTalkBack')">+ Info</button>
+            </div>
+        </div>
+        </div>
+        </section>
+
+        <!-- Secciones ocultas con más información -->
+     <section id="infoIA" class="info-seccion hidden">
+        <div class="container">
+            <h2>Inteligencia Artificial</h2>
+            <p>La Inteligencia Artificial (IA) es un campo de la informática que desarrolla sistemas y programas capaces de realizar tareas que normalmente requieren inteligencia humana. 
+                Estas tareas incluyen el aprendizaje, el razonamiento, la toma de decisiones, el reconocimiento de patrones, el procesamiento del lenguaje y la percepción visual.<br>
+                <h3>Características de la IA</h3>
+                ✅ Accesibilidad para personas con discapacidad:<br>
+                - Lectores de pantalla como TalkBack o VoiceOver ayudan a personas con discapacidad visual.<br>
+                - Reconocimiento de voz para personas con movilidad reducida (ej., asistentes como Google Assistant, Siri y Alexa).<br>
+                ✅ Asistencia en la salud:<br>
+                - Diagnóstico médico avanzado mediante IA en radiografías y análisis clínicos.<br>
+                - Robots y asistentes virtuales que ayudan a pacientes en hospitales o en casa.<br>
+                ✅ Educación personalizada:<br>
+                - Plataformas de aprendizaje adaptativo que ajustan los contenidos según el nivel del estudiante.<br>
+                - Herramientas de accesibilidad para personas con dislexia o dificultades de aprendizaje.<br>
+                ✅ Automatización de tareas diarias:<br>
+                - Asistentes de voz que ayudan con recordatorios, agendas y tareas cotidianas.<br>
+                - Domótica inteligente que facilita el control de dispositivos en el hogar.<br>
+                <br>En resumen, la Inteligencia Artificial tiene un impacto positivo en la vida de las personas, brindando soluciones en salud,
+                educación, accesibilidad y automatización de tareas diarias. Su desarrollo sigue avanzando y promete mejorar aún más la calidad de vida en el futuro.<br>
+            </p>
+            <button onclick="cerrarInfo('infoIA')">Cerrar</button>
+        </div>
+    </section>
+
+    <section id="infoTalkBack" class="info-seccion hidden">
+        <div class="container">
+            <h2>TalkBack</h2>
+            <div class="texto">
+            <p>TalkBack es un lector de pantalla desarrollado por Google para dispositivos Android. 
+                Está diseñado para ayudar a las personas con discapacidad visual a interactuar con sus dispositivos mediante retroalimentación auditiva y háptica.<br>
+                <h3>Características de TalkBack</h3>
+                ✅ Retroalimentación por voz:<br>
+                - Describe en voz alta los elementos de la pantalla, como botones, notificaciones y texto.<br>
+                - Indica la posición y el estado de los elementos seleccionados.<br>
+                ✅ Gestos personalizados:<br>
+                - Permite navegar por el dispositivo usando toques y deslizamientos en la pantalla.<br>
+                - Incluye gestos específicos para desplazarse por menús, seleccionar opciones y activar funciones.<br>
+                ✅ Uso de teclado y braille:<br>
+                - Compatible con teclados físicos y pantallas braille.<br>
+                - Soporta entrada de texto en braille con la función BrailleBack.<br>
+                ✅ Modo de exploración táctil:<br>
+                - Al deslizar el dedo por la pantalla, TalkBack anuncia los elementos bajo el dedo.<br>
+                - Permite levantar el dedo para seleccionar un elemento o realizar gestos adicionales para acciones avanzadas.<br>
+                ✅ Comandos de voz:<br>
+                - Permite controlar ciertas funciones mediante comandos de voz.<br>
+                - Facilita la navegación sin necesidad de realizar gestos complejos.<br>
+                ✅ Compatibilidad con aplicaciones:<br>
+                - Funciona con la mayoría de las aplicaciones de Android.<br>
+                - Los desarrolladores pueden optimizar sus apps para mejorar la accesibilidad con TalkBack.<br>
+                ✅ Ajustes personalizables:<br>
+                - Velocidad de la voz, volumen y tono ajustables.<br>
+                - Opciones para cambiar gestos y mejorar la experiencia del usuario.<br>
+                <br>TalkBack es una herramienta esencial para la accesibilidad en Android, proporcionando autonomía a las personas con discapacidad visual 
+                al facilitarles el uso de sus dispositivos.<br></p>
+            </div>
+            <button onclick="cerrarInfo('infoTalkBack')">Cerrar</button>
+        </div>
+    </section>
+
+        <section id="caracteristicas">
+        <div class="container">
+            <ul>
+                <li>⭐ Ayuda mediante herramientas online para qué las personas <br>
+                    puedan acceder a información desde cualquier parte del mundo</li>
+                <li>⭐ Completa felixibilidad de horarios debido <br>
+                    a que nuestro compromiso es 100% escencial</li>
+                <li>⭐ Puedes contactarnos para lograr una mayor facilidad <br>
+                    de comunicación en caso de tener cualquier tipo de duda o pregunta</li>
+            </ul>
+        </div>
+        </section>
+
+        <section id="Necesito-ayuda">
+            <h2>¿Necesitas ayuda?</h2>
+            <a href="https://www.instagram.com/nanaawebcr?igsh=MTR0N3gweW04OWVnZQ==">
+            <button>Contactanos</button>
+        </a>
+        </section>
+
+        <footer>
+            <div class="container">
+            <p>&copy; NanaaWeb 2025</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
